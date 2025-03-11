@@ -1,0 +1,281 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+   
+}
+
+body {
+    background-color:white;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(32, 31, 31);
+    padding:35px;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.logo span {
+    color: blue;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background: blue;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: url('imag/4.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    width: 84%;
+    margin-left: 8%;
+}
+
+.hero h1 
+{
+    margin-bottom: 60px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left 
+    
+
+}
+.hero span {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 60px;
+}
+
+.hero p {
+    margin: 2% 0;    
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.hero,button 
+{
+    text-align: left;
+    border: none;
+    background-color: #111;
+    color: white; 
+    padding: 10px 20px ;
+    font-size: 16px;
+    cursor: pointer;
+    align-items: l;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.flight-planner
+{
+    background: rgb(230, 229, 229);
+    padding: 20px;
+    width: 25%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-left: -65%;
+    box-sizing: border-box; 
+}
+h3
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 15px;
+    font-size: 30px;
+}
+h5
+{
+    color: #44abc9;
+    margin-top: 15px;
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+h4
+{
+    margin-top: 5px;
+    font-weight: lighter;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form button {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    background: l;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: #44abc9;
+    width: 25%;
+    border-radius: 5%;
+    padding: 10px;      
+}
+
+button:hover {
+    
+    background-color:#111;
+    color:#44abc9;
+}
+
+.Welcome 
+{
+    display:grid;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.about 
+{
+   
+    padding: 20px;
+    width: 66%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-left: 30%;
+    margin-top: -65%;
+
+}
+h2
+{
+    font-size: 30px;
+    
+    padding: 5px;
+}
+p
+{
+    color: #44abc9;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+    padding: 15px;
+}
+h3
+{
+    color: #383838;
+    padding: 5px;
+    
+}
+h5
+{
+    color:#44abc9;
+    padding: 10px;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+.bt-1 {
+    background-color: #403d3d;
+    color: white;
+    border: none;
+    margin-left: 84%;
+    width: 15%;
+
+}
+.bt-2 {
+    background-color:#44abc9;
+    color: white;
+    border: none;
+    width: 15%;
+    margin-left: 66%;
+}
+.bt-3 {
+    background-color: #3d3b3b;
+    color: white;
+    border: none;
+    width: 15%;
+}
+h6
+{
+    color: black;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    padding: 5px;
+    text-align: justify;
+    
+}
+u
+{
+    color: #44abc9;
+}
+.notice
+{
+    background-color: #44abc9;
+    margin-left: 70%;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: -20% ;
+    margin-right: 2%;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flight-planner, .welcome {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
